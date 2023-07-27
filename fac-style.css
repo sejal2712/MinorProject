@@ -1,0 +1,65 @@
+/* ----faculty dashboard css----------- */
+body{
+  align-content: center;
+}
+@keyframes exampless {
+    0%   {background-color: rgb(188, 211, 248);}
+    20%  {background-color: rgb(243, 243, 198);}
+    40%  {background-color: rgb(209, 209, 230);}
+    60% {background-color: rgb(217, 252, 217);}
+    80% {background-color: rgb(253, 224, 169);}
+    100% {background-color: rgb(221, 171, 183);}
+  }
+  
+  
+  .fd_div1{
+    height: 150px;
+    width: 100%;
+    background-color: #679ace;
+    text-align: center;
+    text-decoration: wavy;
+   
+  }
+  
+  .fd_h1{
+    padding: 50px 30px;
+    text-decoration: underline;
+    text-decoration-color: white;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+   
+  }
+  
+  .fd_cards{
+    height: 200px;
+    width: 350px;
+    background-color: rgb(188, 211, 248);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: #000;
+    border-radius: 15%;
+    text-align: center;
+    animation-name: exampless;
+    animation-duration: 50s;
+    transition: width 2s, height 2s, transform 2s;
+  }
+  
+  .fd_cards:hover {
+    width: 400px;
+    height: 300px;
+    /* transform: rotate(360deg); */
+  }
+  
+  
+  
+  .fd_h2{
+    text-align: center;
+    font-weight: bold;
+    color: #2e05e2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+  }
+  

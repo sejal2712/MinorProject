@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
+
+
+  <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+  <link type="text/css" rel="stylesheet" href="style.css"/>
+
+  <script src="bootstrap/js/jquery-3.6.1.min.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.js"></script>
+  <title>E-exam speedup</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	
+</head>
+<body onload ="slider()" data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+
+    <!-- nav bar starts -->
+      <div class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a href="newHome.html" class="navbar-brand">E-exam speedup</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item active">
+                        <a href="newHome.html" class="nav-link smoothScroll">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="About us.html" class="nav-link smoothScroll">About</a>
+                    </li>
+
+<!--                <li class="nav-item">
+                        <a href="#gallery" class="nav-link smoothScroll">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#class" class="nav-link smoothScroll">Classes</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#schedule" class="nav-link smoothScroll">Schedules</a>
+                    </li>
+-->
+                    <li class="nav-item">
+                        <a href="team.html" class="nav-link smoothScroll">OurTeam</a>
+                    </li>
+<!--
+                    <li class="nav-item">
+                        <a href="#event" class="nav-link smoothScroll">Events</a>
+                    </li>
+-->
+                    <li class="nav-item">
+                        <a href="Contact.html" class="nav-link smoothScroll">Contacts</a>
+                    </li>
+                    
+                </ul>
+                
+                <a href="Logindept.html" class="Lbtn">
+                <button type="button" >Login</button></a>
+            
+            </div> 
+        </div>
+    </div>
+
+
+    <!-- navbar ends -->
+    
+    <div class="banner">
+        
+        <div class="slider">
+            <img src="images/img.jpeg" id="sliderImg">
+        </div>
+        <div class="overlay">
+                
+                <div class="content">
+                    <h1>Mid Sem Exam Task Holder</h1>
+                   
+                </div>
+
+            </div>
+
+    </div>
+    <script>
+        var sliderImg=document.getElementById("sliderImg");
+        var images=new Array(
+            "images/mst.jpg",
+            "images/img.jpeg",
+            "images/building-big-picture.jpg",
+            // "images/images.jpeg",
+            "images/1554788343phpVxqZt2.png",
+
+        );
+        var len=images.length;
+        var i=0;
+        function slider(){
+            if(i>len-1){
+                i=0;
+            }
+            sliderImg.src=images[i];
+            i++;
+            setTimeout('slider()',2500);
+        }
+    </script>
+    
+</body>
+<footer>
+    <div class="footerr">
+        <h2>E-Exam SpeedUp</h2>
+        <p>This is a mid semester exam automation system for the Acropolis Institute of Technology and Research</p>
+    </div>
+</footer>
+</html>
